@@ -15,12 +15,12 @@ class Stopwatch {
     }
     
     pad0(value) {
-    let result = value.toString();
-    if (result.length < 2) {
-        result = '0' + result;
+        let result = value.toString();
+        if (result.length < 2) {
+            result = 0 + result;
+        }
+        return result;
     }
-    return result;
-}
     
     print() {
         this.display.innerText = this.format(this.times);

@@ -28,7 +28,7 @@ var Stopwatch = function () {
         value: function pad0(value) {
             var result = value.toString();
             if (result.length < 2) {
-                result = '0' + result;
+                result = 0 + result;
             }
             return result;
         }
