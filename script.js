@@ -14,7 +14,7 @@ class Stopwatch {
         };
     }
     
-    pad0(value) {
+    function pad0(value) {
         let result = value.toString();
         if (result.length < 2) {
             result = 0 + result;
