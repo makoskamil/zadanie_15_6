@@ -14,14 +14,6 @@ class Stopwatch {
         };
     }
     
-    function pad0(value) {
-        let result = value.toString();
-        if (result.length < 2) {
-            result = 0 + result;
-        }
-        return result;
-    }
-    
     print() {
         this.display.innerText = this.format(this.times);
     }
@@ -60,6 +52,14 @@ class Stopwatch {
         this.running = false;
         clearInterval(this.watch);
     }
+}
+
+function pad0(value) {
+    let result = value.toString();
+    if (result.length < 2) {
+        result = 0 + result;
+    }
+    return result;
 }
 
 const stopwatch = new Stopwatch(
